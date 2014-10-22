@@ -1,0 +1,45 @@
+<style>
+    .disk td {
+        border: 1px solid black;
+        padding: 10px;
+    }
+
+    .disk table {
+        border: 1px solid black;
+        font-size: 25px;
+        margin-top: 30px;
+    }
+
+    .disk table tr:first-child {
+        background: #daefff;
+    }
+    a {
+        margin: 10px;
+        font-size: 20px;
+        color: blue
+    }
+    a:hover {
+        border: 4px dotted darkgrey;
+    }
+</style>
+
+<section class="disk">
+  <ul>
+    <li>
+      <a href="/">Back to menu</a>
+    </li>
+    <li>
+      <a href="/memory">Memory</a>
+    </li>
+  </ul>
+  <table>
+      <% all.each do |elem| %>
+        <tr>
+            <td>
+              <%= elem %>
+            </td>
+        </tr>
+      <% end %>
+
+  </table>
+</section>

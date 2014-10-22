@@ -1,0 +1,29 @@
+<style>
+    a {
+        margin: 10px;
+        font-size: 20px;
+        color: blue
+    }
+    a:hover {
+        border: 4px dotted darkgrey;
+    }
+    .memoryInfo {
+        font-size: 30px;
+        color: green;
+        font-weight: bold;
+    }
+</style>
+<section class="memory">
+  <ul>
+    <li>
+      <a href="/">Back to menu</a>
+    </li>
+    <li>
+      <a href="/disk">Disk info</a>
+    </li>
+  </ul>
+  <h1>RAM information:</h1>
+  <p class="memoryInfo">
+    <%= ramInfo %>
+  </p>
+</section>
